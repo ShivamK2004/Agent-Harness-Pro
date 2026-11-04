@@ -1,0 +1,22 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.env
+*.db
+*.sqlite3
+logs/*.jsonl
+logs/*.log
+.DS_Store
+Thumbs.db
+.streamlit/secrets.toml
+
+# Next.js frontend
+frontend/node_modules/
+frontend/.next/
+frontend/.env.local
+frontend/out/
+frontend/tsconfig.tsbuildinfo

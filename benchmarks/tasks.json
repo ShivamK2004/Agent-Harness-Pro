@@ -1,0 +1,107 @@
+[
+  {
+    "id": "KB-01",
+    "task": "What is the sample support response time?",
+    "expected_keywords": ["24 hours", "business days", "support"],
+    "reference_answer": "Support aims to respond within 24 hours on business days.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-02",
+    "task": "How can a customer contact support?",
+    "expected_keywords": ["support@example.com", "order ID", "description"],
+    "reference_answer": "Contact support@example.com and include your order ID and a short description of the issue.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-03",
+    "task": "What information should be included when reporting a billing issue?",
+    "expected_keywords": [
+      "invoice number",
+      "transaction reference",
+      "transaction date"
+    ],
+    "reference_answer": "Include the invoice number, transaction reference, and transaction date.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-04",
+    "task": "Which stages are used in the Agent Harness Pro workflow?",
+    "expected_keywords": ["planner", "researcher", "executor", "verifier"],
+    "reference_answer": "The workflow uses a planner, researcher, executor, and verifier sequence.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-05",
+    "task": "Which providers are supported by Agent Harness Pro?",
+    "expected_keywords": ["Gemini", "Ollama", "Mock"],
+    "reference_answer": "Agent Harness Pro supports Gemini, Ollama, and Mock mode.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-06",
+    "task": "What does the benchmark evaluator measure?",
+    "expected_keywords": [
+      "expected-keyword coverage",
+      "token overlap",
+      "source citation markers",
+      "expected tool use",
+      "latency"
+    ],
+    "reference_answer": "The evaluator measures expected-keyword coverage, lexical token overlap, source citation markers, expected tool use, and latency.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-07",
+    "task": "What sensitive information should customers never include in a billing support message?",
+    "expected_keywords": [
+      "full payment-card numbers",
+      "passwords",
+      "one-time passwords"
+    ],
+    "reference_answer": "Customers should never include full payment-card numbers, passwords, or one-time passwords in a support message.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-08",
+    "task": "What does the least privilege principle require for tools?",
+    "expected_keywords": ["permissions", "specific task", "least privilege"],
+    "reference_answer": "A tool should receive only the permissions required for its specific task; this is the least privilege principle.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "KB-09",
+    "task": "Which types of outputs require independent human verification?",
+    "expected_keywords": [
+      "money",
+      "health",
+      "legal",
+      "employment",
+      "account access",
+      "safety"
+    ],
+    "reference_answer": "Outputs affecting money, health, legal status, employment, account access, or safety require independent human verification.",
+    "expected_tools": ["knowledge_search"]
+  },
+  {
+    "id": "TOOL-01",
+    "task": "Calculate 125 * 8 + 40",
+    "expected_keywords": ["1040"],
+    "reference_answer": "The result is 1040.",
+    "expected_tools": ["calculator"]
+  },
+  {
+    "id": "TOOL-02",
+    "task": "Calculate 48 / 6 + 7",
+    "expected_keywords": ["15"],
+    "reference_answer": "The result is 15.",
+    "expected_tools": ["calculator"]
+  },
+  {
+    "id": "TOOL-03",
+    "task": "Create benchmark-note.txt file with content: Agent Harness benchmark file creation test.",
+    "expected_keywords": ["created", "benchmark-note.txt", "verified"],
+    "reference_answer": "Successfully created benchmark-note.txt in the workspace and verified that the file was written.",
+    "expected_tools": ["workspace_write"]
+  }
+]
